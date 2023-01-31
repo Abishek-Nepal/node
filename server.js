@@ -12,7 +12,6 @@ app.get("/", (req, res)=>{
 
     console.log("working here..")
 })
-
 app.listen(port, ()=>{
     console.log("starting the server...");
 })
