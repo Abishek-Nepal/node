@@ -7,11 +7,11 @@ const app = express();
 const port = 8080;
 
 // const connection = async ()=>{}
-app.get("/", (req, res)=>{
+app.get("/", (req, res) => {
     res.json("working...")
 
     console.log("working here..")
-});
-app.listen(port, ()=>{
+})
+app.listen(port, () => {
     console.log("starting the server...");
-});
+})
