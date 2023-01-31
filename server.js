@@ -6,7 +6,15 @@ dotenv.config();
 const app = express();
 const port = 8080;
 
-// const connection = async ()=>{}
+const connection = async ()=>{
+    try{
+        await mongoose.connect(MONGO);
+        console.log("connecteing...")
+    }catch(err){
+      console.error(err);
+      
+    }
+}
 app.get("/", (req, res) => {
     res.json("working...")
 
