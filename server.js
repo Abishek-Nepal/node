@@ -8,7 +8,8 @@ const port = 8080;
 
 // const connection = async ()=>{}
 app.get("/", (req, res)=>{
-    res.json("working")
+    res.json("working...")
+
     console.log("working here..")
 })
 
