@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
     res.json("working...")
 
     console.log("working here..")
-})
+});
 app.listen(port, () => {
     console.log("starting the server...");
-})
+});
